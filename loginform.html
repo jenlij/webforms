@@ -11,14 +11,13 @@
     <title>Login Form</title>
 </head>
 <body>
-<form action="http://localhost:5000"> 
-<input type="text" name="user-name" value="" autofocus>
-<input type="text" name="user-name" value="" placeholder="Example: radishmouse">
-<input type="text" name="user-name" value="" required>
-<textarea name="tweet" maxlength="160"></textarea> <input type="text" name="location" value="" maxlength="20">
-<input type="number" name="age1">
-<input type="range" name="age2">
-<input type="range" name="age3" min="18" max="99" step="1">
+<form action="http://localhost:5000" enctype="multipart/form-data" method="POST"> 
+
+<input type="text" name="greeting" value="Hello World"> 
+
+<input type="file" name="avatar"> 
+
+
 <input type="submit" name="do-it" value="submit"> 
 </form>
 </body>
