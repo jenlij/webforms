@@ -12,54 +12,14 @@
 </head>
 <body>
 <form action="http://localhost:5000"> 
-<label for="text"> Text:
-  <input type="text" name="user-name" value="">
-  </label>
-  <label for="pw"> Password:
-  <input type="password" name="user-password" value="">
-  </label>
-  <br>  
-<label> Pandas: 
-<input type="checkbox" name="pandas" value="what do you want I'm sleeping."> 
-</label>
-<label> Cats:
-<input type="checkbox" name="cats" value="meow!" checked> 
-</label>
-<textarea name="manifesto"></textarea>
-<textarea name="manifesto">Always keep your powder dry.</textarea>
-<select name="pet"> 
-
-<option>Cats</option> 
-
-<option>Dogs</option> 
-
-<option>Pandas</option> 
-</select>
-<select name="pet"> 
-
-<option value="1001">Cats</option> 
-
-<option value="1002">Dogs</option> 
-
-<option value="1003">Pandas</option>
-
-</select>
-
-<select name="pet" multiple> 
-
-<option value="1001">Cats</option> 
-
-<option value="1002">Dogs</option> 
-
-<option value="1003"selected>Pandas</option> 
-
-</select>
-<input type="hidden" name="userId" value="8675309">
-
-
-  <input type="submit" name="do-it" value="Yeah? Yeah!!!!"> 
-  <input type="reset" value="Reset">
-
+<input type="text" name="user-name" value="" autofocus>
+<input type="text" name="user-name" value="" placeholder="Example: radishmouse">
+<input type="text" name="user-name" value="" required>
+<textarea name="tweet" maxlength="160"></textarea> <input type="text" name="location" value="" maxlength="20">
+<input type="number" name="age1">
+<input type="range" name="age2">
+<input type="range" name="age3" min="18" max="99" step="1">
+<input type="submit" name="do-it" value="submit"> 
 </form>
 </body>
 </html>
