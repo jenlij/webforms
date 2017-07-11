@@ -1,0 +1,118 @@
+<!--Create a super hero programmer survey, and create a form that collects the following information:
+•Name
+•Age
+•Super hero power(s)
+•Cape size (Small, Medium, Large)
+•Operating System choice
+•Bio
+•Tagline
+•Arch Enemies List
+•Mascot/Power-Animal
+•Programming Languages
+Try to create several variations, trying out the different form field types.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+</head>
+<body class="container">
+    <header>
+        <h1>SuperHero Survey</h1>
+    </header>
+    <form action="http://localhost:5000" enctype="multipart/form-data" method="POST">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="sr-only" for="name">Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="age" class="col-sm-2 control-label">Age</label>
+                <input type="number" class="form-control" min="0">
+            </div>
+            <div class="form-group">
+                <label for="bio" class="col-sm-2 control-label">Bio
+                <textarea rows="3" class="form-control"></textarea>
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                </label>
+                </div>
+                <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                </label>
+                </div>
+                <div class="radio disabled">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                    Option three is disabled
+                </label>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="col-md-6">  
+            <div class="form-group">
+                <label class="sr-only" for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+        </div>
+    </form>
+    <!--<form action="http://localhost:5000" enctype="multipart/form-data" method="POST"> 
+        <label for="name">Name: 
+        <input type="text" name="name" value="" autofocus required>
+        </label>
+        <br><br>
+        <label for="age">Age: 1
+        <input type="range" name="age" min="0" max="130" step="1"> 130
+        </label> 
+        <br><br>
+        <label for="powers">Top super powers:
+            <ul>
+            <li><input type="checkbox" name="flying" value="">Flight</li>
+            <li><input type="checkbox" name="teleportation" value="">Teleportation</li>
+            <li><input type="checkbox" name="strength" value=""> Super Strength</li>
+            <li><input type="checkbox" name="polyglot" value=""> Polyglotism</li>
+            <li><input type="checkbox" name="other" value=""> Other 
+            <br> 
+            <input type="text" name="power" value=""> </li>
+            </ul> 
+        </label>
+        <br>
+        <label for="cape-size"> Cape Size:
+            <select name="Cape-Size"> 
+                <option>S</option> 
+                <option>M</option> 
+                <option>L</option> 
+            </select>
+        </label>
+        <br> <br>
+        <label for="bio">Bio:
+            <textarea name="bio">About you</textarea>
+        </label>
+        <br><br>
+        <label for="programming-lang"> Programming Languages: <br><br>
+            <select name="lang" multiple> 
+                <option value="1001">Python</option> 
+                <option value="1002">JS</option> 
+                <option value="1003">C++</option>
+            </select>
+        </label>
+        <br><br>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" name="reset" value="reset"> 
+    </form>   -->
+</body>
+</html>
